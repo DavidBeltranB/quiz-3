@@ -1,0 +1,41 @@
+package javaapplication2;
+
+public class Suzuki {
+
+  // Atributos 
+  String modelo;
+  int cilindrada;
+  double precio;
+  
+  // Constructor
+  public Suzuki(String modelo, int cilindrada, double precio) {
+    this.modelo = modelo;
+    this.cilindrada = cilindrada;
+    this.precio = precio;
+  }
+
+  // Métodos
+  public void mostrarDatos() {
+    System.out.println("Modelo: " + modelo); 
+    System.out.println("Cilindrada: " + cilindrada);
+    System.out.println("Precio: " + precio);
+  }
+
+}
+
+public class Principal {
+  public static void main(String[] args) {
+    
+    // Crear objetos Suzuki
+    Suzuki gz = new Suzuki("GZ 150", 149, 7.150.000);
+    Suzuki vstrom = new Suzuki("V-Strom 650", 645, 29.000.000); 
+    Suzuki hayabusa = new Suzuki("hayabusa", 1.340, 101.300.000);
+
+    // Mostrar datos
+    System.out.println("Motos Suzuki:");
+    gz.mostrarDatos();
+    vstrom.mostrarDatos();
+    hayabusa.mostrarDatos();
+
+  }
+}
